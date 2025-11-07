@@ -23,34 +23,39 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 2%;
+    padding: 1.3rem 2.5rem;
     position: fixed;
     width: 100%;
     background: white;
     z-index: 1000;
 
     .logo {
-        font-weight: 500;
-        font-size: 0.8rem;
+        font-weight: 550;
+        font-size: 0.9rem;
+        font-family: "Satoshi", "Satoshi Placeholder", sans-serif;
+     
+        
     }
 
     .navlinks {
         a {
             text-decoration: none;
-            color: #333;
-            margin: 0 0.2rem;
-            font-weight: 300;
+            color: #000000;
+            margin: 0 0.5rem;
+            font-weight: 100;
             font-size: 0.8rem;
 
             &:hover {
-                color: rgb(95, 94, 94);
+                color: rgba(134, 132, 132, 0.831);
             }
         }
     }
 
     .btnoutline {
-        border: 1px solid #000;
-        padding: 0.6rem 1.4rem;
+        border: 1px solid #363535;
+        font-size: 0.7rem;
+        padding: 0.8rem 1.4rem;
+        font-weight: 550;
         border-radius: 25px;
         background-color: transparent;
         cursor: pointer;
@@ -71,6 +76,8 @@ body {
 
     .tagline {
         font-style: italic;
+        line-height: 2rem;
+        
         color: #3e3d3d;
         margin-bottom: 1rem;
     }
@@ -116,7 +123,7 @@ body {
 }
 
 .features {
-   // padding: 8rem 10%;
+    // padding: 8rem 10%;
     background: linear-gradient(to bottom, #fff 20%, #f8e3ff, #ffe4e1);
 
     .feature-text {
