@@ -509,4 +509,66 @@ body {
   align-items: center;
   width: 250px;
   border-radius: 20px;
+}
+
+/* ---------------- Container leftside 3 option rightside 3 images according to option---------------- */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.container .left {
+  width: 50%;
+  padding: 80px;
+  position: relative;
+}
+.container .item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 0;
+  cursor: pointer;
+  transition: 0.35s ease;
+}
+.container .num-wrapper {
+  position: relative;
+  width: 40px;
+}
+.container .num {
+  font-size: 32px;
+  opacity: 0.5;
+}
+.container .item.active .num {
+  opacity: 1;
+  color: #ff4b7b;
+}
+.container .highlightBar {
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 60px;
+  background: #ff4b7b;
+  border-radius: 20px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.container .item.active .highlightBar {
+  opacity: 1;
+}
+.container .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container .right img {
+  width: 500px;
+  height: 550px;
+  border-radius: 20px;
+  transition: 0.4s;
+  filter: grayscale(50%);
 }/*# sourceMappingURL=style.css.map */
