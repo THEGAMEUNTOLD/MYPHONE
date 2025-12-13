@@ -1,4 +1,5 @@
 //  <!-- /* ---------------- Container leftside 3 option rightside 3 images according to option---------------- */ -->
+
 const items = document.querySelectorAll(".item");
 const displayImage = document.getElementById("displayImage");
 const highlightBar = document.getElementById("highlightBar");
@@ -33,6 +34,7 @@ items.forEach((item, index) => {
 startAutoSlide();
 
 //     <!-- /* ---------------- Text normal, photos animated ---------------- */ -->
+
 const images = document.querySelectorAll(".slide");
 
 function updateScale() {
