@@ -619,6 +619,7 @@ body {
   border: 1px solid #363535;
   font-size: 0.9rem;
   padding: 1.5rem 3rem;
+  padding: 1.5rem 3rem;
   font-weight: 450;
   border-radius: 40px;
   background-color: transparent;
@@ -658,6 +659,7 @@ body {
   }
 }
 .feature-text3 {
+  margin-top: 100px;
   width: 100%;
   padding: 0 2% 2% 2%;
 }

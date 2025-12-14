@@ -21,6 +21,7 @@ body {
     color: #111;
     background-color: #fff;
     line-height: 1.4;
+
 }
 
 /* ---------------- NAVBAR ---------------- */
@@ -778,6 +779,7 @@ body {
             margin-top: 60px;
             border: 1px solid #363535;
             font-size: 0.9rem;
+          padding: 1.5rem 3rem;
             padding: 1.5rem 3rem;
             font-weight: 450;
             border-radius: 40px;
@@ -826,10 +828,11 @@ body {
 
 }
 
+
 //   /* ---------------- feature-text2 (text,) part-3---------------- */
 
 .feature-text3 {
-
+    margin-top: 100px;
     width: 100%;
     padding: 0 2% 2% 2%;
 
@@ -1062,7 +1065,8 @@ footer {
             margin-right: 8px;
             opacity: 0.7;
 
-            i{font-size: 1rem;
+            i {
+                font-size: 1rem;
                 padding: 5px;
             }
         }
