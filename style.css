@@ -14,11 +14,28 @@ body {
   width: 100%;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section,
+div {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #111;
   background-color: #fff;
   line-height: 1.4;
+  overflow-x: hidden;
+}
+
+.page-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 /* ---------------- NAVBAR ---------------- */
@@ -844,4 +861,11 @@ footer .footer-column .icon {
 footer .footer-column .icon i {
   font-size: 1rem;
   padding: 5px;
+}
+
+section,
+.container,
+footer {
+  max-width: 1440px;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */

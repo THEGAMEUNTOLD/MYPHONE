@@ -13,7 +13,16 @@ html,
 body {
     height: 100%;
     width: 100%;
-    //   overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section,
+div {
+    box-sizing: border-box;
 }
 
 body {
@@ -21,8 +30,16 @@ body {
     color: #111;
     background-color: #fff;
     line-height: 1.4;
-
+    overflow-x: hidden;
 }
+
+.page-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
 
 /* ---------------- NAVBAR ---------------- */
 
@@ -779,7 +796,7 @@ body {
             margin-top: 60px;
             border: 1px solid #363535;
             font-size: 0.9rem;
-          padding: 1.5rem 3rem;
+            padding: 1.5rem 3rem;
             padding: 1.5rem 3rem;
             font-weight: 450;
             border-radius: 40px;
@@ -1039,7 +1056,6 @@ footer {
             font-size: 0.9rem;
             color: #ffffff75;
         }
-
     }
 
     .footer-column {
@@ -1070,8 +1086,14 @@ footer {
                 padding: 5px;
             }
         }
-
-
     }
+}
 
+
+
+section,
+.container ,
+footer {
+    max-width: 1440px;
+    margin: auto;
 }
