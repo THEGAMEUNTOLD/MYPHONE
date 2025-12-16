@@ -33,28 +33,44 @@ items.forEach((item, index) => {
 
 startAutoSlide();
 
-    // <!-- /* ---------------- Text normal, photos animated ---------------- */ -->
+// <!-- /* ---------------- Text normal, photos animated ---------------- */ -->
 
 const images = document.querySelectorAll(".slide");
 
 function updateScale() {
-    const centerX = window.innerWidth / 2;
+  const centerX = window.innerWidth / 2;
 
-    images.forEach(img => {
-        const rect = img.getBoundingClientRect();
-        const imgCenter = rect.left + rect.width / 2;
+  images.forEach(img => {
+    const rect = img.getBoundingClientRect();
+    const imgCenter = rect.left + rect.width / 2;
 
-        const distance = Math.abs(centerX - imgCenter);
-        const maxDistance = window.innerWidth / 2;
+    const distance = Math.abs(centerX - imgCenter);
+    const maxDistance = window.innerWidth / 2;
 
-        // CENTER (distance = 0) → 0.8 scale (smaller)
-        // EDGES (distance = max) → 1.2 scale (bigger)
-        const scale = 0.9 + (distance / maxDistance) * 0.4;
+    // CENTER (distance = 0) → 0.8 scale (smaller)
+    // EDGES (distance = max) → 1.2 scale (bigger)
+    const scale = 0.9 + (distance / maxDistance) * 0.4;
 
-        img.style.transform = `scale(${scale})`;
-    });
+    img.style.transform = `scale(${scale})`;
+  });
 
-    requestAnimationFrame(updateScale);
+  requestAnimationFrame(updateScale);
 }
 
 updateScale();
+
+/* ---------------- Toggle Menu with Hamburger ---------------- */
+
+
+const hamburger = document.querySelector(".hamburger");
+const navlinks = document.querySelector(".navlinks");
+const icon = hamburger.querySelector("i");
+
+hamburger.addEventListener("click", () => {
+    navlinks.classList.toggle("active");
+    hamburger.querySelector("i").classList.toggle("ri-menu-line");
+    hamburger.querySelector("i").classList.toggle("ri-close-line");
+});
+
+
+
