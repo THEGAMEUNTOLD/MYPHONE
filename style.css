@@ -409,6 +409,20 @@ body {
      object-fit: contain;
 }
 
+@media (max-width: 768px) {
+  .Trusted-section .Trusted-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .Trusted-section .Trusted-header p {
+    padding-left: 0;
+  }
+  .Trusted-section .boxs-section {
+    grid-template-columns: 1fr;
+  }
+}
 /* ---------------- feature-text2 (text,) ---------------- */
 .feature-text2 {
   margin-top: 200px;
@@ -451,7 +465,7 @@ body {
   line-height: 2;
 }
 
-/* ---------------- feature-content-1 (text,image ) ---------------- */
+/* ---------------- feature-content-1 (text,image ) + feature-content-2 (text,image ) ---------------- */
 .Feature-content1 {
   overflow: hidden;
   margin: 0 20px;
@@ -532,7 +546,6 @@ body {
   border: 5px solid black;
 }
 
-/* ---------------- feature-content-2 (text,image ) ---------------- */
 .Feature-content2 {
   overflow: hidden;
   margin: 0 20px;
@@ -613,6 +626,33 @@ body {
   border-radius: 20px;
 }
 
+@media (max-width: 768px) {
+  .Feature-content1,
+  .Feature-content2 {
+    flex-direction: row;
+    width: 100%;
+    margin: 0 10px 40px;
+    gap: 20px;
+  }
+  .Feature-content1 .left-Content,
+  .Feature-content1 .right-Content,
+  .Feature-content2 .left-Content,
+  .Feature-content2 .right-Content {
+    flex: 0 0 100%;
+    width: 100%;
+    min-height: auto;
+  }
+  .Feature-content1 img,
+  .Feature-content2 img {
+    width: 220px;
+    margin: 0 auto;
+    display: block;
+  }
+  .Feature-content2 .right-Content img {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
 /* ---------------- Container leftside 3 option rightside 3 images according to option---------------- */
 .container {
   display: flex;
@@ -754,13 +794,13 @@ body {
 }
 .my-section .auto-photo-slider .slider-track {
   display: flex;
-  gap: 50px;
+  gap: 49px;
   align-items: center;
   animation: slideleft 25s linear infinite;
 }
 .my-section .auto-photo-slider img {
-  width: 180px;
-  height: 250px;
+  width: 150px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px;
@@ -773,6 +813,20 @@ body {
   }
   100% {
     transform: translateX(-200%);
+  }
+}
+@media (max-width: 768px) {
+  .auto-photo-slider {
+    padding: 15px 0;
+  }
+  .auto-photo-slider .slider-track {
+    gap: 20px;
+    animation-duration: 15s;
+  }
+  .auto-photo-slider img {
+    width: 120px;
+    height: 170px;
+    border-radius: 10px;
   }
 }
 .feature-text3 {
