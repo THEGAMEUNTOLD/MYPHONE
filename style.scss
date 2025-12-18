@@ -15,6 +15,29 @@ body {
     width: 100%;
 }
 
+// .bounding {
+    
+//     width: fit-content;
+//     overflow: hidden;
+// }
+
+// .bounding .boundingelem{
+//     transform: translateY(100%);
+// }
+
+  .fade-text {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: appear 1s ease forwards;
+  }
+
+  @keyframes appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 img {
     max-width: 100%;
     height: auto;
@@ -847,8 +870,6 @@ body {
         padding: 80px;
     }
 
-
-
     .item {
         display: flex;
         align-items: center;
@@ -937,9 +958,9 @@ body {
 
     .right img {
 
-        width: 500px;
-        min-width: 100%;
-        height: auto;
+        width: 450px;
+        min-width: 40%;
+        height: 500px;
         border-radius: 20px;
         transition: 0.4s;
         filter: grayscale(50%);
@@ -1063,9 +1084,6 @@ body {
 
 
 }
-
-
-
 
 //   /* ---------------- feature-text2 (text,) part-3---------------- */
 
