@@ -15,28 +15,18 @@ body {
     width: 100%;
 }
 
-// .bounding {
-    
-//     width: fit-content;
-//     overflow: hidden;
-// }
-
-// .bounding .boundingelem{
-//     transform: translateY(100%);
-// }
-
-  .fade-text {
+.fade-text {
     opacity: 0;
     transform: translateY(10px);
     animation: appear 1s ease forwards;
-  }
+}
 
-  @keyframes appear {
+@keyframes appear {
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}
 
 img {
     max-width: 100%;
@@ -71,7 +61,6 @@ body {
     padding: 1.5rem 2.5rem;
     width: 100%;
     background: white;
-
 
     .logo {
         font-weight: 550;
@@ -114,7 +103,6 @@ body {
     font-size: 1.8rem;
     cursor: pointer;
     z-index: 1001;
-
 }
 
 @media(max-width:768px) {
@@ -312,18 +300,17 @@ body {
     padding: 60rem 3% 3% 40rem;
     padding-left: 3%;
     padding-right: 3%;
-    // padding-top: 60rem;
     padding: 6rem 1.5rem;
     position: relative;
 
     .feature-text {
-        // overflow: hidden;
+        overflow: hidden;
         display: flex;
-        // justify-content: space-between;
-        // align-items: flex-start;
+        justify-content: space-between;
+        align-items: flex-start;
         gap: 3rem;
-        // max-width: 1400px;
-        // margin: auto;
+        max-width: 1400px;
+        margin: auto;
 
         @media (max-width: 768px) {
             flex-direction: column;
@@ -336,7 +323,6 @@ body {
         .rightSection {
             flex: 0 0 40%;
         }
-
 
         .leftSection {
 
@@ -360,7 +346,6 @@ body {
         .rightSection {
             padding-top: 140px;
             max-width: 480px;
-
 
             h2 {
                 font-size: 1.45rem;
@@ -407,12 +392,10 @@ body {
     width: 100%;
     position: relative;
 
-
     img {
         width: 100%;
         height: auto;
         display: block;
-        // border-radius: 30px;
     }
 
     .image-text {
@@ -425,7 +408,6 @@ body {
         padding: clamp(1.5rem, 5vw, 4rem);
         gap: clamp(1.5rem, 4vw, 3rem);
 
-
         .right-text {
             flex: 0 0 60%;
         }
@@ -434,14 +416,12 @@ body {
             flex: 0 0 40%;
         }
 
-
         .right-text {
+
             p {
                 font-size: clamp(1.2rem, 3vw, 2rem);
                 opacity: 0.85;
                 font-family: myfont1;
-
-
             }
 
             h1 {
@@ -459,7 +439,6 @@ body {
                 margin-bottom: 1.5rem;
                 opacity: 0.9;
             }
-
 
             .btnoutline {
                 color: #fff;
@@ -518,7 +497,6 @@ body {
         align-items: center;
         margin-bottom: 30px;
         padding: 0 20px;
-
 
         h1 {
             flex: 0 0 40%;
@@ -641,7 +619,6 @@ body {
     width: 97%;
     margin-bottom: 50px;
 
-
     .left-Content,
     .right-Content {
         min-height: 420px;
@@ -650,7 +627,6 @@ body {
 
     .left-Content {
         flex: 0 0 65%;
-        // height: 65vh;
         background: linear-gradient(110deg, #FACF43, #F32166, #6A007D);
         border-radius: 30px;
         position: relative;
@@ -747,7 +723,6 @@ body {
 
     .left-Content {
         flex: 0 0 62%;
-        // height: 65vh;
         background: linear-gradient(110deg, #6B007E, #D60070);
         border-radius: 30px;
         position: relative;
@@ -787,7 +762,6 @@ body {
 
     .right-Content {
         flex: 0 0 30%;
-        // height: 65vh;
         background: #F7F7F7;
         border-radius: 30px;
 
@@ -854,7 +828,6 @@ body {
         margin-top: 20px;
         margin-left: 0;
     }
-
 }
 
 /* ---------------- Container leftside 3 option rightside 3 images according to option---------------- */
@@ -878,10 +851,6 @@ body {
         cursor: pointer;
         transition: 0.5s ease;
         font-family: myfont1;
-
-        .num {
-            font-family: myfont1;
-        }
 
         .writing-container {
 
@@ -926,7 +895,6 @@ body {
     }
 
     .highlightBar {
-
         position: absolute;
         left: -15px;
         top: 50%;
@@ -941,11 +909,7 @@ body {
 
     .item.active .highlightBar {
         opacity: 1;
-
-
     }
-
-
 
     .right {
         width: 50%;
@@ -953,18 +917,15 @@ body {
         justify-content: center;
         align-items: center;
         object-fit: contain;
-
     }
 
     .right img {
-
         width: 450px;
         min-width: 40%;
         height: 500px;
         border-radius: 20px;
         transition: 0.4s;
         filter: grayscale(50%);
-
     }
 
 
@@ -1000,7 +961,6 @@ body {
             margin-bottom: 10px;
             opacity: 0.8;
             font-family: myfont1;
-
         }
 
         h2 {
@@ -1081,17 +1041,14 @@ body {
         height: 170px;
         border-radius: 10px;
     }
-
-
 }
 
-//   /* ---------------- feature-text2 (text,) part-3---------------- */
+  /* ---------------- feature-text2 (text,) part-3---------------- */
 
 .feature-text3 {
     margin-top: 100px;
     width: 100%;
     padding: 0 2% 2% 2%;
-
 
     .feature-text {
         overflow: hidden;
@@ -1129,7 +1086,7 @@ body {
     }
 }
 
-// <!-- /* ---------------- feature-image with 6 value point---------------- */ -->
+ /* ---------------- feature-image with 6 value point---------------- */
 
 .feature-valueimg {
     display: grid;
@@ -1175,7 +1132,7 @@ body {
     }
 }
 
-// <!-- /* ---------------- feature-thankful text, image-------------- */ -->
+ /* ---------------- feature-thankful text, image-------------- */ 
 
 .feature-thankfull {
     width: 100%;
@@ -1186,7 +1143,6 @@ body {
     text-align: center;
 
     .thankfull-text {
-        // max-width: 900px;
 
         .png {
             img {
@@ -1204,7 +1160,6 @@ body {
             font-weight: 400;
             margin-top: 1.3rem;
             margin-bottom: 1.3rem;
-
         }
 
         h2 {
@@ -1229,7 +1184,6 @@ body {
     width: 100%;
     height: 90vh;
     overflow: hidden;
-
     background: linear-gradient(180deg, #ffffff 20%, transparent 70%),
         linear-gradient(90deg, #b167b197 10%, #ff00ff97 60%, #f8e18b 100%);
 
@@ -1245,7 +1199,7 @@ body {
     }
 }
 
-// <!-- /* ---------------- footer-------------- */ -->
+ /* ---------------- footer-------------- */ 
 
 footer {
     background: #000;
@@ -1328,12 +1282,6 @@ footer {
     }
 }
 
-.page-wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0;
-}
-
 section {
     width: 100%;
 }
@@ -1389,7 +1337,6 @@ section {
     }
 
     .hero2 {
-        // position: relative;
         margin-top: 0;
     }
 
@@ -1493,5 +1440,4 @@ section {
             line-height: 1.6;
         }
     }
-
 }

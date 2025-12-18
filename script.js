@@ -33,7 +33,7 @@ items.forEach((item, index) => {
 
 startAutoSlide();
 
-// <!-- /* ---------------- Text normal, photos animated ---------------- */ -->
+ /* ---------------- Text normal, photos animated ---------------- */
 
 const images = document.querySelectorAll(".slide");
 

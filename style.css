@@ -242,8 +242,13 @@ body {
   position: relative;
 }
 .features .feature-text {
+  overflow: hidden;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 3rem;
+  max-width: 1400px;
+  margin: auto;
 }
 @media (max-width: 768px) {
   .features .feature-text {
@@ -685,9 +690,6 @@ body {
   transition: 0.5s ease;
   font-family: myfont1;
 }
-.container .item .num {
-  font-family: myfont1;
-}
 .container .item .writing-container h2 {
   font-size: 1.3rem;
   font-weight: 600;
@@ -841,6 +843,7 @@ body {
     border-radius: 10px;
   }
 }
+/* ---------------- feature-text2 (text,) part-3---------------- */
 .feature-text3 {
   margin-top: 100px;
   width: 100%;
@@ -872,6 +875,7 @@ body {
   line-height: 1.5;
 }
 
+/* ---------------- feature-image with 6 value point---------------- */
 .feature-valueimg {
   display: grid;
   grid-template-columns: 45% 50%;
@@ -909,6 +913,7 @@ body {
   left: 1.6;
 }
 
+/* ---------------- feature-thankful text, image-------------- */
 .feature-thankfull {
   width: 100%;
   padding: 6rem 2rem;
@@ -964,6 +969,7 @@ body {
   mix-blend-mode: multiply;
 }
 
+/* ---------------- footer-------------- */
 footer {
   background: #000;
   padding: 5rem 2rem;
@@ -1027,12 +1033,6 @@ footer .footer-column .icon {
 footer .footer-column .icon i {
   font-size: 1rem;
   padding: 5px;
-}
-
-.page-wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 section {
